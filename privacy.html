@@ -3,192 +3,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Sufyan Rafiq</title>
-<meta name="description" content="Privacy Policy for all apps, websites, and services published by independent developer Sufyan Rafiq. We collect as little data as possible — most apps work entirely on your device.">
-<link rel="canonical" href="https://saminakukab07.github.io/sip/privacy.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Sufyan Rafiq">
-<meta property="og:title" content="Privacy Policy — Sufyan Rafiq">
-<meta property="og:description" content="How we handle your information across all of our apps and services. Short version: we collect as little as possible.">
-<meta property="og:url" content="https://saminakukab07.github.io/sip/privacy.html">
-<meta property="og:image" content="https://saminakukab07.github.io/sip/icon.png">
-<meta name="twitter:card" content="summary">
+<title>Privacy Policy — Sip</title>
+<meta name="description" content="Privacy Policy for Sip, the water tracker for Mac. No account, no tracking, no data collected — everything stays on your device.">
 <link rel="icon" type="image/png" href="icon.png">
-<link rel="stylesheet" href="styles.css">
+<style>
+  :root{
+    --blue:#2E9BE6; --blue-deep:#1463B8; --ink:#0f1b2d; --muted:#5b6b7f;
+    --bg:#eef4fb; --bg2:#e3ebf4; --card:#ffffff; --line:rgba(15,27,45,.08);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#eaf1f9; --muted:#9fb1c4; --bg:#0b1422; --bg2:#070d17; --card:#111e30; --line:rgba(255,255,255,.09); }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; background:var(--bg)}
+  body{
+    margin:0; min-height:100vh; color:var(--ink); font:16px/1.7 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:linear-gradient(180deg,var(--bg),var(--bg2)) fixed; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 22px 80px}
+  header.hero{
+    text-align:center; padding:72px 22px 40px; position:relative; overflow:hidden;
+  }
+  header.hero::before{
+    content:""; position:absolute; inset:-40% 0 auto 0; height:480px;
+    background:radial-gradient(60% 80% at 50% 0%, rgba(46,155,230,.20), transparent 70%);
+    pointer-events:none;
+  }
+  .icon{
+    width:104px; height:104px; border-radius:24px; display:block; margin:0 auto 20px;
+    box-shadow:0 18px 50px rgba(20,99,184,.35), 0 2px 8px rgba(0,0,0,.12);
+  }
+  .app-name{font-size:15px; font-weight:700; letter-spacing:.4px; text-transform:uppercase;
+    background:linear-gradient(135deg,var(--blue),var(--blue-deep)); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  h1{font-size:38px; line-height:1.15; margin:8px 0 10px; letter-spacing:-.5px; font-weight:800}
+  .updated{color:var(--muted); font-size:14px; margin:0}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:20px;
+    padding:30px 30px 8px; box-shadow:0 12px 40px rgba(15,27,45,.06); margin-top:8px;
+  }
+  .tldr{
+    background:linear-gradient(135deg, rgba(46,155,230,.12), rgba(20,99,184,.10));
+    border:1px solid rgba(46,155,230,.28); border-radius:16px; padding:18px 22px; margin:0 0 26px;
+    display:flex; gap:14px; align-items:flex-start;
+  }
+  .tldr .drop{font-size:22px; line-height:1.3}
+  .tldr p{margin:0; font-weight:600}
+  h2{font-size:20px; margin:34px 0 8px; letter-spacing:-.2px}
+  p{margin:0 0 16px; color:var(--ink)}
+  .muted{color:var(--muted)}
+  ul{margin:0 0 16px; padding-left:20px}
+  li{margin:6px 0}
+  a{color:var(--blue-deep); text-decoration:none; font-weight:600}
+  a:hover{text-decoration:underline}
+  .contact{
+    margin:30px 0 0; padding:22px; border-radius:16px; text-align:center;
+    background:linear-gradient(135deg,var(--blue),var(--blue-deep)); color:#fff;
+  }
+  .contact h2{color:#fff; margin:0 0 6px}
+  .contact a{color:#fff; text-decoration:underline}
+  footer{text-align:center; color:var(--muted); font-size:13px; padding:36px 22px 0}
+  footer a{color:var(--muted)}
+</style>
 </head>
 <body>
-  <nav class="nav" aria-label="Main">
-    <div class="nav-inner">
-      <a class="brand" href="index.html"><img src="icon.png" alt=""><span>Sufyan Rafiq</span></a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="privacy.html" aria-current="page">Privacy Policy</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
-        <a class="cta" href="index.html#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <header class="hero hero--legal">
-    <img class="icon icon--small" src="icon.png" alt="Developer logo">
-    <div class="eyebrow">Legal</div>
+  <header class="hero">
+    <img class="icon" src="icon.png" alt="Sip app icon">
+    <div class="app-name">Sip · Water Tracker</div>
     <h1>Privacy Policy</h1>
-    <p><span class="updated">Last updated: July 6, 2026</span></p>
+    <p class="updated">Last updated: June 28, 2026</p>
   </header>
 
-  <main class="wrap wrap--narrow">
-    <div class="card toc" aria-label="Table of contents">
-      <h2>Contents</h2>
-      <ol>
-        <li><a href="#introduction"><span class="n">01</span>Introduction</a></li>
-        <li><a href="#information-we-collect"><span class="n">02</span>Information We Collect</a></li>
-        <li><a href="#how-information-is-used"><span class="n">03</span>How Information Is Used</a></li>
-        <li><a href="#permissions"><span class="n">04</span>Permissions</a></li>
-        <li><a href="#analytics"><span class="n">05</span>Analytics</a></li>
-        <li><a href="#purchases"><span class="n">06</span>Purchases &amp; Subscriptions</a></li>
-        <li><a href="#health-data"><span class="n">07</span>Health Data</a></li>
-        <li><a href="#third-party-services"><span class="n">08</span>Third-Party Services</a></li>
-        <li><a href="#data-retention"><span class="n">09</span>Data Retention</a></li>
-        <li><a href="#security"><span class="n">10</span>Security</a></li>
-        <li><a href="#childrens-privacy"><span class="n">11</span>Children’s Privacy</a></li>
-        <li><a href="#international-users"><span class="n">12</span>International Users</a></li>
-        <li><a href="#your-rights"><span class="n">13</span>Your Rights</a></li>
-        <li><a href="#changes"><span class="n">14</span>Changes to This Policy</a></li>
-        <li><a href="#contact-information"><span class="n">15</span>Contact Information</a></li>
-      </ol>
-    </div>
-
-    <div class="card legal-card legal">
+  <div class="wrap">
+    <div class="card">
       <div class="tldr">
-        <span class="drop">🔒</span>
-        <p>The short version: we collect as little data as possible. Most of our apps work entirely on your device — no account, no tracking, no ads. This policy explains how information is handled across all of our apps and services.</p>
+        <span class="drop">💧</span>
+        <p>The short version: Sip collects <strong>nothing</strong>. There’s no account, no sign-up, no tracking, and no analytics. Everything you log stays on your Mac.</p>
       </div>
 
-      <section id="introduction">
-        <h2><span class="num">01</span>Introduction</h2>
-        <p>This Privacy Policy applies to all mobile applications, desktop applications, websites, and related services (collectively, the “Services”) published by Sufyan Rafiq (“we”, “us”, or “our”). It covers every app we publish today and any app we release in the future.</p>
-        <p>We build software with a simple principle: <strong>collect as little data as possible</strong>. This policy explains what information may be processed when you use our Services, how it is used, and the choices and rights you have. By using any of our Services, you agree to the practices described here.</p>
-      </section>
+      <p>Sip (“the app”, “we”, “us”) is a hydration tracker for macOS. We built Sip to be private by design. This policy explains what happens to your information when you use the app — and the simple answer is that your information never leaves your device.</p>
 
-      <section id="information-we-collect">
-        <h2><span class="num">02</span>Information We Collect</h2>
-        <p>Most of our apps are designed to work entirely on your device. They do not require an account, sign-up, or login, and we do not ask for your name, email address, or any other identifier just to use them. Depending on the app and the features you choose to use, the following limited categories of information may be processed:</p>
-        <ul>
-          <li><strong>Information you create in an app</strong> — content you enter, such as entries, preferences, goals, and settings. This is stored locally on your device, unless an app clearly offers an optional sync feature (for example, iCloud), in which case syncing is handled by your platform account.</li>
-          <li><strong>Support communications</strong> — if you contact us by email, we receive your email address and the contents of your message. We use them only to respond to you.</li>
-          <li><strong>Diagnostics</strong> — if you have opted in to share diagnostics with developers in your device settings, the platform (for example, Apple) may provide us with anonymized crash reports and aggregated statistics. These do not identify you personally.</li>
-        </ul>
-        <p>We do <strong>not</strong> sell personal information, we do not display third-party advertising, and we do not track you across apps or websites.</p>
-      </section>
+      <h2>Information we collect</h2>
+      <p><strong>None.</strong> We do not collect, store, transmit, sell, or share any personal information. Sip has no user accounts and no login. We never ask for your name, email, or any identifier.</p>
 
-      <section id="how-information-is-used">
-        <h2><span class="num">03</span>How Information Is Used</h2>
-        <p>Any information described above is used only to:</p>
-        <ul>
-          <li>provide and operate the features of our Services;</li>
-          <li>respond to your support requests and communicate with you when you contact us;</li>
-          <li>maintain and improve the stability, performance, and quality of our Services;</li>
-          <li>process purchases through the platform’s payment system; and</li>
-          <li>comply with applicable legal obligations.</li>
-        </ul>
-        <p>We never use your information for third-party advertising, profiling, or resale.</p>
-      </section>
+      <h2>Your hydration data</h2>
+      <p>The drinks you log, your goal, reminder schedule, and preferences are stored <strong>locally on your Mac</strong> using Apple’s on-device database (SwiftData) and standard app settings. This data is never uploaded to us or to any third party. If you delete the app, this data is removed with it. You can also export your history to a CSV file or erase all data at any time from <span class="muted">Settings → Data &amp; Privacy</span>.</p>
 
-      <section id="permissions">
-        <h2><span class="num">04</span>Permissions</h2>
-        <p>Some features may request system permissions — for example, notifications, camera, photo library, microphone, location, or health data. Permissions are requested only when a feature you choose to use needs them, and the app explains why at the point of the request.</p>
-        <p>You can decline any permission, and you can change or revoke permissions at any time in your device’s system settings. Declining a permission only affects the feature that depends on it; the rest of the app remains fully usable.</p>
-      </section>
+      <h2>Notifications</h2>
+      <p>If you enable reminders, Sip schedules <strong>local notifications</strong> on your device through macOS. These are generated entirely on your Mac. No reminder content or schedule is sent to any server.</p>
 
-      <section id="analytics">
-        <h2><span class="num">05</span>Analytics</h2>
-        <p>Our apps do not include third-party advertising SDKs or cross-app tracking technologies. Where analytics are used at all, we rely on privacy-respecting, aggregated, and anonymized data — primarily the opt-in analytics that Apple and other platforms provide to developers (such as download counts and anonymized crash statistics). This data cannot be used to identify you.</p>
-      </section>
+      <h2>Purchases</h2>
+      <p>Sip offers an optional “Sip Pro” upgrade through Apple’s In-App Purchase system. All payments are processed by <strong>Apple</strong> — we never see or receive your payment details. Purchase and subscription handling is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple’s Privacy Policy</a>.</p>
 
-      <section id="purchases">
-        <h2><span class="num">06</span>Purchases &amp; Subscriptions</h2>
-        <p>Some of our apps offer optional one-time purchases or subscriptions. All payments are processed by the platform’s official payment system — for example, Apple’s In-App Purchase system. We never see, receive, or store your payment card details.</p>
-        <p>Purchase records are associated with your platform account (for example, your Apple Account) and are governed by the platform’s own privacy policy, such as <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple’s Privacy Policy</a>. You can manage or cancel subscriptions at any time in your platform account settings.</p>
-      </section>
+      <h2>Third parties &amp; tracking</h2>
+      <p>Sip contains <strong>no</strong> third-party analytics, no advertising, no tracking SDKs, and makes no network connections of its own. There is nothing to opt out of, because nothing is collected.</p>
 
-      <section id="health-data">
-        <h2><span class="num">07</span>Health Data</h2>
-        <p>This section applies only to apps that offer health and fitness features (for example, integration with Apple Health / HealthKit). Where such features exist:</p>
-        <ul>
-          <li>health data is accessed only with your explicit permission;</li>
-          <li>it is used solely to provide the feature you enabled;</li>
-          <li>it is never used for advertising or marketing, never sold, and never shared with third parties;</li>
-          <li>you can revoke access at any time in your device’s health or privacy settings.</li>
-        </ul>
-        <p>Apps that do not offer health features do not access health data at all.</p>
-      </section>
+      <h2>Children’s privacy</h2>
+      <p>Sip is safe for all ages and does not collect any data from anyone, including children under 13.</p>
 
-      <section id="third-party-services">
-        <h2><span class="num">08</span>Third-Party Services</h2>
-        <p>Our Services are built primarily on platform frameworks provided by Apple and other operating system vendors (for example, iCloud sync, notifications, and in-app purchases). When these platform services process data, they do so under the platform’s own privacy policy.</p>
-        <p>If a specific app integrates an additional third-party service, that integration is disclosed on the app’s App Store page and, where appropriate, inside the app itself. We choose third-party services carefully and prefer those that minimize data collection.</p>
-      </section>
+      <h2>Changes to this policy</h2>
+      <p>If this policy ever changes, we’ll update this page and revise the “Last updated” date above. Since Sip doesn’t collect data, we don’t expect material changes.</p>
 
-      <section id="data-retention">
-        <h2><span class="num">09</span>Data Retention</h2>
-        <p>Data stored on your device remains there until you delete it — either within the app (where an erase or reset option is provided) or by uninstalling the app. We do not keep server-side copies of your app content.</p>
-        <p>Support emails are retained only as long as needed to help you and to keep a reasonable record of the conversation, after which they may be deleted.</p>
-      </section>
-
-      <section id="security">
-        <h2><span class="num">10</span>Security</h2>
-        <p>We take reasonable technical and organizational measures to protect information. Because our apps store data on your device, it is protected by your operating system’s built-in security — including sandboxing and device encryption.</p>
-        <p>No method of storage or transmission is 100% secure, but our approach of collecting as little data as possible means there is very little that could ever be exposed.</p>
-      </section>
-
-      <section id="childrens-privacy">
-        <h2><span class="num">11</span>Children’s Privacy</h2>
-        <p>Our Services are not directed at children under the age of 13 (or the equivalent minimum age in your jurisdiction), and we do not knowingly collect personal information from children. Because our apps generally collect no personal information at all, this applies to users of every age.</p>
-        <p>If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
-      </section>
-
-      <section id="international-users">
-        <h2><span class="num">12</span>International Users</h2>
-        <p>Our Services are available worldwide. Because our apps are designed to keep data on your device, your information generally does not leave your device or your platform account’s storage region.</p>
-        <p>Where limited information does reach us — for example, a support email — we handle it in accordance with this policy and with applicable data protection laws, including the GDPR for users in the European Economic Area and the United Kingdom.</p>
-      </section>
-
-      <section id="your-rights">
-        <h2><span class="num">13</span>Your Rights</h2>
-        <p>Depending on where you live, you may have rights to access, correct, export, delete, or restrict the use of your personal information, and to withdraw consent where processing is based on consent.</p>
-        <p>Because our apps keep data on your device, you can exercise most of these rights directly: view and edit your data in the app, export it where an export feature is provided, or erase it by using the app’s reset option or uninstalling the app. For anything else — including requests about support correspondence — contact us using the details below and we will respond promptly.</p>
-      </section>
-
-      <section id="changes">
-        <h2><span class="num">14</span>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time — for example, when we release new apps or features. Updates are published on this page and the “Last updated” date above is revised. For material changes, we will provide additional notice within the affected Services where appropriate.</p>
-      </section>
-
-      <section id="contact-information">
-        <h2><span class="num">15</span>Contact Information</h2>
-        <p>If you have any questions about this Privacy Policy or how your information is handled, please get in touch — we are happy to help.</p>
-        <p>Email: <a href="mailto:saminakukab07@gmail.com">saminakukab07@gmail.com</a></p>
-      </section>
-    </div>
-
-    <div class="contact" id="contact">
-      <h2>Contact us</h2>
-      <p>Questions about your privacy or this policy? We’d love to hear from you.</p>
-      <a class="mail" href="mailto:saminakukab07@gmail.com">saminakukab07@gmail.com</a>
-      <p class="small">We usually respond within 1–2 business days.</p>
-      <p class="small"><a href="index.html#contact">Visit our support page</a></p>
+      <div class="contact">
+        <h2>Contact us</h2>
+        <p>Questions about your privacy or this policy?</p>
+        <p style="margin:0"><a href="mailto:saminakukab07@gmail.com">saminakukab07@gmail.com</a></p>
+      </div>
     </div>
 
     <footer>
-      <div class="foot-links">
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
-        <a href="index.html#contact">Support</a>
-        <a href="mailto:saminakukab07@gmail.com">Contact</a>
-      </div>
-      <p class="copy">© 2026 Sufyan Rafiq. All rights reserved.</p>
+      © 2026 Sip · Water Tracker · <a href="index.html">Home</a>
     </footer>
-  </main>
+  </div>
 </body>
 </html>
